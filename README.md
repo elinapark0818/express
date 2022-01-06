@@ -50,11 +50,10 @@ app.use(cors());
 ## URI 설정
 
 ```js
-const http = require("http");
 const PORT = 4999;
 const ip = "localhost";
 
-server.listen(PORT, ip, () => {
+app.listen(PORT, ip, () => {
   console.log(`http server listen on ${ip}:${PORT}`);
 });
 ```
