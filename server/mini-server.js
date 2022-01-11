@@ -34,7 +34,7 @@ app.listen(port, ip, () => {
 // * get 요청 처리
 app.get("/", (req, res) => {
   res.send("express 적용 및 서버 시작!");
-  console.log(res);
+  console.log(req.params);
 });
 
 app.post("/upper", (req, res) => {
